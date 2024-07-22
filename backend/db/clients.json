@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "Lucas",
+    "lastName": "Pallara",
+    "companyName": "La post",
+    "idclient": "ec073313-b231-4edc-9208-3aa5406de8e8"
+  },
+  {
+    "firstName": "Loane ",
+    "lastName": "Pallara",
+    "companyName": "La post",
+    "idclient": "ea0bd0f5-70dd-42ec-8bcc-264bf159286e"
+  },
+  {
+    "firstName": "Loane",
+    "lastName": "Pallara",
+    "companyName": "Amazon Luxembourg",
+    "idclient": "e3da63ea-4c00-4b6f-8f37-14390ae163fb"
+  },
+  {
+    "firstName": "Jeremie",
+    "lastName": "Matz",
+    "companyName": "Quelque part",
+    "idclient": "3d37f5e7-dbf4-43a2-9ec9-b81d4b91de8d"
+  },
+  {
+    "firstName": "Logan",
+    "lastName": "Pallara",
+    "function": "Project Manager / Engineer",
+    "phone": "4567878673",
+    "email": "",
+    "companyName": "La Post",
+    "address1": "41b Boucle alsace Lorraine",
+    "address2": "",
+    "postalCode": "57570",
+    "city": "Cattenom",
+    "country": "FRANCE",
+    "dateAdded": "2024-07-22",
+    "idclient": "ff9a01ba-4163-442d-9fca-aecaa8b22f99"
+  }
+]

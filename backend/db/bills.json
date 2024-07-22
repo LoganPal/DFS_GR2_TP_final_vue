@@ -1,0 +1,1 @@
+[{"id":"6dcdfc3d-55c0-453c-a789-73398153e472","billnum":"sfqsfsdgs","description":"sdgdgs<dgdsg","date":"2024-07-22","client":{"idclient":2,"firstName":"Harry","lastName":"Potter","companyName":"Poudlard & Co."},"prestations":[{"id":1721683148736,"description":"Exemple de prestation","qty":1,"price":450}],"discount":0,"paid":0,"totalHT":450,"tva":20,"totalTTC":540}]
