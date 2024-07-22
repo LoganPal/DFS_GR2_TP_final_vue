@@ -1,57 +1,65 @@
 <template>
-  <div>
-    <h2>{{ isEditing ? 'Modifier le client' : 'Ajouter un client' }}</h2>
-    <form @submit.prevent="saveClient">
-      <div class="form-group">
-        <label for="firstName">Prénom</label>
-        <input type="text" id="firstName" v-model="client.firstName" required />
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">{{ isEditing ? 'Modifier le client' : 'Ajouter un client' }}</h2>
+        <form @submit.prevent="saveClient" class="space-y-4">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="firstName" class="form-label">Prénom</label>
+              <input type="text" id="firstName" v-model="client.firstName" required class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="lastName" class="form-label">Nom</label>
+              <input type="text" id="lastName" v-model="client.lastName" required class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="companyName" class="form-label">Entreprise</label>
+              <input type="text" id="companyName" v-model="client.companyName" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="function" class="form-label">Fonction</label>
+              <input type="text" id="function" v-model="client.function" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="phone" class="form-label">Téléphone</label>
+              <input type="text" id="phone" v-model="client.phone" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" v-model="client.email" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="address1" class="form-label">Adresse 1</label>
+              <input type="text" id="address1" v-model="client.address1" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="address2" class="form-label">Adresse 2</label>
+              <input type="text" id="address2" v-model="client.address2" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="postalCode" class="form-label">Code Postal</label>
+              <input type="text" id="postalCode" v-model="client.postalCode" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="city" class="form-label">Ville</label>
+              <input type="text" id="city" v-model="client.city" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="country" class="form-label">Pays</label>
+              <input type="text" id="country" v-model="client.country" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="dateAdded" class="form-label">Date d'ajout</label>
+              <input type="date" id="dateAdded" v-model="client.dateAdded" class="form-control" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-4">
+            <button type="submit" class="btn btn-primary">{{ isEditing ? 'Enregistrer' : 'Ajouter' }}</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="lastName">Nom</label>
-        <input type="text" id="lastName" v-model="client.lastName" required />
-      </div>
-      <div class="form-group">
-        <label for="function">Fonction</label>
-        <input type="text" id="function" v-model="client.function" />
-      </div>
-      <div class="form-group">
-        <label for="phone">Téléphone</label>
-        <input type="text" id="phone" v-model="client.phone" />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" v-model="client.email" />
-      </div>
-      <div class="form-group">
-        <label for="companyName">Entreprise</label>
-        <input type="text" id="companyName" v-model="client.companyName" />
-      </div>
-      <div class="form-group">
-        <label for="address1">Adresse 1</label>
-        <input type="text" id="address1" v-model="client.address1" />
-      </div>
-      <div class="form-group">
-        <label for="address2">Adresse 2</label>
-        <input type="text" id="address2" v-model="client.address2" />
-      </div>
-      <div class="form-group">
-        <label for="postalCode">Code Postal</label>
-        <input type="text" id="postalCode" v-model="client.postalCode" />
-      </div>
-      <div class="form-group">
-        <label for="city">Ville</label>
-        <input type="text" id="city" v-model="client.city" />
-      </div>
-      <div class="form-group">
-        <label for="country">Pays</label>
-        <input type="text" id="country" v-model="client.country" />
-      </div>
-      <div class="form-group">
-        <label for="dateAdded">Date d'ajout</label>
-        <input type="date" id="dateAdded" v-model="client.dateAdded" />
-      </div>
-      <button type="submit" class="btn btn-primary">{{ isEditing ? 'Enregistrer' : 'Ajouter' }}</button>
-    </form>
+    </div>
   </div>
 </template>
 
@@ -68,16 +76,16 @@ export default {
     const client = ref({
       firstName: '',
       lastName: '',
+      companyName: '',
       function: '',
       phone: '',
       email: '',
-      companyName: '',
       address1: '',
       address2: '',
       postalCode: '',
       city: '',
       country: 'FRANCE',
-      dateAdded: new Date().toISOString().split('T')[0]
+      dateAdded: new Date().toISOString().split('T')[0],
     });
     const isEditing = ref(false);
 

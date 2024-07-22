@@ -37,5 +37,20 @@
     "country": "FRANCE",
     "dateAdded": "2024-07-22",
     "idclient": "ff9a01ba-4163-442d-9fca-aecaa8b22f99"
+  },
+  {
+    "firstName": "Loane",
+    "lastName": "Pallara",
+    "companyName": "Amazon Luxembourg",
+    "function": "La post",
+    "phone": "46567898",
+    "email": "",
+    "address1": "41b Boucle alsace Lorraine",
+    "address2": "",
+    "postalCode": "57570",
+    "city": "Cattenom",
+    "country": "FRANCE",
+    "dateAdded": "2024-07-22",
+    "idclient": "bd4da4e1-54f8-4063-ae69-2d68947b6441"
   }
 ]
