@@ -56,7 +56,7 @@ export default {
 
     const deleteClient = async (id) => {
       await clientStore.deleteClient(id);
-      fetchClients(); // Rafraîchir la liste des clients après suppression
+      fetchClients(); 
     };
 
     return {
@@ -69,5 +69,5 @@ export default {
 </script>
 
 <style scoped>
-/* Ajoutez ici les styles pour votre composant */
+
 </style>

@@ -40,8 +40,7 @@ export const useClientStore = defineStore('client', {
       try {
         const response = await axios.post('http://localhost:3000/clients', clientData);
         this.clients.push(response.data);
-        await this.fetchClients(); // Assurez-vous que les clients sont rafraîchis après la création
-      } catch (error) {
+        await this.fetchClients(); 
         this.error = error;
         console.error('Error creating client:', error);
       } finally {
@@ -55,7 +54,7 @@ export const useClientStore = defineStore('client', {
         const index = this.clients.findIndex(client => client.idclient === id);
         if (index !== -1) {
           this.clients[index] = response.data;
-          await this.fetchClients(); // Assurez-vous que les clients sont rafraîchis après la mise à jour
+          await this.fetchClients();
         }
       } catch (error) {
         this.error = error;
@@ -69,7 +68,7 @@ export const useClientStore = defineStore('client', {
       try {
         await axios.delete(`http://localhost:3000/clients/${id}`);
         this.clients = this.clients.filter(client => client.idclient !== id);
-        await this.fetchClients(); // Assurez-vous que les clients sont rafraîchis après la suppression
+        await this.fetchClients(); 
       } catch (error) {
         this.error = error;
         console.error('Error deleting client:', error);
